@@ -27,7 +27,7 @@ function main() {
         }
         else if(interestType === "compound") {
             let total = filledFields[0] * (1 + filledFields[1]/100) ** filledFields[2]
-            printResult(total.toLocaleString("de-DE"))
+            printResult(total.toLocaleString("de-DE")) // "de-DE" uses commas and periods for formatting numbers according to German conventions.
         }
     }
 }
